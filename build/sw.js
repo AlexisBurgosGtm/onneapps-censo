@@ -1,4 +1,4 @@
-var CACHE = 'censocachev14';
+var CACHE = 'censocachev15';
 const staticAssets = [  
   './css/vendors.bundle.css',
   './css/app.bundle.css',

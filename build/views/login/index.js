@@ -203,7 +203,10 @@ function getSucursalesToken(token){
         })
         .then((response) => {
             let data = response.data;
-            if(data.rowsAffected[0]=="1"){
+            console.log(data);
+            resolve(data);
+            /*
+            if(Number(data.rowsAffected[0])==1){
                  console.log('resolve')
                 resolve(data);
             }else{
@@ -211,7 +214,9 @@ function getSucursalesToken(token){
                 reject();
               
             };
+            */
         }, (error) => {
+            console.log('error al cargar token: ');
             console.log(error);
             reject();
         });          
